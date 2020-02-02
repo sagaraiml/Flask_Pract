@@ -1,0 +1,9 @@
+<!doctype html>
+<title> Title </title>
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='style.css') }}">
+
+{% if name %}
+	<h1>Hi there {{ name.title() }}</h1>
+{% else %}
+	<h1>Hi there Please login </h1>
+{% endif %}
